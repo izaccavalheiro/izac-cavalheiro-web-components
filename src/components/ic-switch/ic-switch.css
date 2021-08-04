@@ -1,0 +1,40 @@
+:host {
+  display: block;
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background: #000;
+  border: .5rem #000 solid;
+  min-width: 3rem;
+  max-width: 3rem;
+  min-height: 2rem;
+  max-height: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+button.active > span {
+  margin-left: 1rem;
+}
+
+button > span {
+  background: #fff;
+  flex: 1;
+  min-width: 1rem;
+  max-width: 1rem;
+  min-height: 1rem;
+  max-height: 1rem;
+  margin-left: 0;
+  transition: all .25s ease-in;
+  font-size: 0;
+  border-radius: 1rem;
+  display: flex;
+}

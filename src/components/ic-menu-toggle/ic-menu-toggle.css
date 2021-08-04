@@ -1,0 +1,43 @@
+:host {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  display: flex;
+  cursor: pointer;
+  border: 0 none;
+  background: none;
+  gap: .5rem;
+  flex-direction: column;
+}
+
+button * {
+  pointer-events: none;
+}
+
+.bar1, .bar2, .bar3 {
+  flex: 1;
+  min-width: 2rem;
+  min-height: .25rem;
+  background-color: #333;
+  transition: 0.4s;
+}
+
+.active .bar1 {
+  -webkit-transform: rotate(-40deg) translate(-.5rem, .59rem);
+  transform: rotate(-40deg) translate(-.5rem, .59rem);
+}
+
+.active .bar2 {
+  opacity: 0;
+}
+
+.active .bar3 {
+  -webkit-transform: rotate(40deg) translate(-.48rem, -.55rem);
+  transform: rotate(40deg) translate(-.48rem, -.55rem);
+}
