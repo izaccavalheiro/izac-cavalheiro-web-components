@@ -4,12 +4,12 @@ import {
   h,
   Prop,
   State
-} from '@stencil/core';
+} from '@stencil/core'
 
 @Component({
   tag: 'ic-menu-toggle',
   styleUrl: 'ic-menu-toggle.css',
-  shadow: true,
+  shadow: true
 })
 export class IcMenuToggle {
   @Prop() label: string
@@ -55,7 +55,6 @@ export class IcMenuToggle {
           <span class='bar3'></span>
         </button>
       </Host>
-    );
+    )
   }
-
 }

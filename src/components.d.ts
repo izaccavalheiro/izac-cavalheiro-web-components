@@ -10,6 +10,13 @@ export namespace Components {
         "active": boolean;
         "label": string;
     }
+    interface IcSocialNetwork {
+        "image": string;
+        "name": string;
+        "target": string;
+        "url": string;
+        "urlTitle": string;
+    }
     interface IcSwitch {
         "active": boolean;
         "label": string;
@@ -22,6 +29,12 @@ declare global {
         prototype: HTMLIcMenuToggleElement;
         new (): HTMLIcMenuToggleElement;
     };
+    interface HTMLIcSocialNetworkElement extends Components.IcSocialNetwork, HTMLStencilElement {
+    }
+    var HTMLIcSocialNetworkElement: {
+        prototype: HTMLIcSocialNetworkElement;
+        new (): HTMLIcSocialNetworkElement;
+    };
     interface HTMLIcSwitchElement extends Components.IcSwitch, HTMLStencilElement {
     }
     var HTMLIcSwitchElement: {
@@ -30,6 +43,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "ic-menu-toggle": HTMLIcMenuToggleElement;
+        "ic-social-network": HTMLIcSocialNetworkElement;
         "ic-switch": HTMLIcSwitchElement;
     }
 }
@@ -38,12 +52,20 @@ declare namespace LocalJSX {
         "active"?: boolean;
         "label"?: string;
     }
+    interface IcSocialNetwork {
+        "image"?: string;
+        "name"?: string;
+        "target"?: string;
+        "url"?: string;
+        "urlTitle"?: string;
+    }
     interface IcSwitch {
         "active"?: boolean;
         "label"?: string;
     }
     interface IntrinsicElements {
         "ic-menu-toggle": IcMenuToggle;
+        "ic-social-network": IcSocialNetwork;
         "ic-switch": IcSwitch;
     }
 }
@@ -52,6 +74,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "ic-menu-toggle": LocalJSX.IcMenuToggle & JSXBase.HTMLAttributes<HTMLIcMenuToggleElement>;
+            "ic-social-network": LocalJSX.IcSocialNetwork & JSXBase.HTMLAttributes<HTMLIcSocialNetworkElement>;
             "ic-switch": LocalJSX.IcSwitch & JSXBase.HTMLAttributes<HTMLIcSwitchElement>;
         }
     }
