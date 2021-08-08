@@ -34,4 +34,7 @@ export const data = [{
 }, {
   name: 'youtube',
   url: 'https://youtube.com/izaccavalheiro'
+}, {
+  name: 'goodreads',
+  url: 'https://youtube.com/izaccavalheiro'
 }]
