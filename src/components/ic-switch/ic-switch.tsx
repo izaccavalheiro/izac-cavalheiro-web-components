@@ -14,6 +14,7 @@ import {
 export class IcSwitch {
   @Prop() label: string
   @Prop() active: boolean = false
+  @Prop() darkMode: boolean = false
 
   @State() checked: boolean = false
   @State() className: string = ''
@@ -49,7 +50,7 @@ export class IcSwitch {
   render() {
     return (
       <Host>
-        <button class={this.className} onClick={this.handleClick}>
+        <button class={`${this.className} ${this.darkMode ? 'dark-mode' : ''}`} onClick={this.handleClick}>
           <span>{this.label}</span>
         </button>
       </Host>

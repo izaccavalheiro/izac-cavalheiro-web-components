@@ -20,6 +20,7 @@ export namespace Components {
     }
     interface IcSwitch {
         "active": boolean;
+        "darkMode": boolean;
         "label": string;
     }
 }
@@ -63,6 +64,7 @@ declare namespace LocalJSX {
     }
     interface IcSwitch {
         "active"?: boolean;
+        "darkMode"?: boolean;
         "label"?: string;
     }
     interface IntrinsicElements {

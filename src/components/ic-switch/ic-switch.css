@@ -38,3 +38,12 @@ button > span {
   border-radius: 1rem;
   display: flex;
 }
+
+button.dark-mode {
+  background: #fff;
+  border-color: #fff;
+}
+
+button.dark-mode > span {
+  background: #000;
+}
