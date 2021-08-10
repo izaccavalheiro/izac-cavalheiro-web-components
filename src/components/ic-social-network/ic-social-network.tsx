@@ -23,21 +23,24 @@ export class IcSocialNetwork {
   @Prop() target: string
   @Prop() url: string
   @Prop() urlTitle: string
+  @Prop() darkMode: boolean
 
-  @State() defaultImage = `NAME-logo.png`;
+  @State() defaultImage = `NAME-logo-COLOR.png`;
   @State() defaultTarget = `_blank`;
 
   render() {
     const name = this.name.toLowerCase()
-    const image = this.image || this.defaultImage.replace('NAME', name)
+    const image = (this.image || this.defaultImage.replace('NAME', name).replace('-COLOR', this.darkMode ? '-inverted' : ''))
     const imageAlt = `${this.name} logo`
     const url = this.url || data.filter(filteredItem => filteredItem.name === name)[0].url
     const urlTitle = this.urlTitle || `${this.name} link`
     const target = this.target || this.defaultTarget
 
+    const classesName = `${this.darkMode ? 'dark-mode' : ''}`
+
     return (
       <Host>
-        <a href={url} title={urlTitle} target={target}>
+        <a href={url} title={urlTitle} target={target} class={classesName}>
           <img src={getAssetPath(`./assets/${image}`)} alt={imageAlt} />
         </a>
       </Host>
