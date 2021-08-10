@@ -8,6 +8,7 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface IcMenuToggle {
         "active": boolean;
+        "darkMode": boolean;
         "label": string;
     }
     interface IcSocialNetwork {
@@ -52,6 +53,7 @@ declare global {
 declare namespace LocalJSX {
     interface IcMenuToggle {
         "active"?: boolean;
+        "darkMode"?: boolean;
         "label"?: string;
     }
     interface IcSocialNetwork {

@@ -14,6 +14,7 @@ import {
 export class IcMenuToggle {
   @Prop() label: string
   @Prop() active: boolean = false
+  @Prop() darkMode: boolean
 
   @State() checked: boolean = false
   @State() className: string = ''
@@ -49,7 +50,7 @@ export class IcMenuToggle {
   render() {
     return (
       <Host>
-        <button class={this.className} onClick={this.handleClick}>
+        <button class={`${this.className} ${this.darkMode ? 'dark-mode' : ''}`} onClick={this.handleClick}>
           <span class='bar1'></span>
           <span class='bar2'></span>
           <span class='bar3'></span>

@@ -7,10 +7,11 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type      | Default     |
-| -------- | --------- | ----------- | --------- | ----------- |
-| `active` | `active`  |             | `boolean` | `false`     |
-| `label`  | `label`   |             | `string`  | `undefined` |
+| Property   | Attribute   | Description | Type      | Default     |
+| ---------- | ----------- | ----------- | --------- | ----------- |
+| `active`   | `active`    |             | `boolean` | `false`     |
+| `darkMode` | `dark-mode` |             | `boolean` | `undefined` |
+| `label`    | `label`     |             | `string`  | `undefined` |
 
 
 ----------------------------------------------

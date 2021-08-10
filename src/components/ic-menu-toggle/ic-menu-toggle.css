@@ -24,8 +24,14 @@ button * {
   flex: 1;
   min-width: 2rem;
   min-height: .25rem;
-  background-color: #333;
+  background-color: #000;
   transition: 0.4s;
+}
+
+.dark-mode .bar1,
+.dark-mode .bar2,
+.dark-mode .bar3 {
+  background-color: #fff;
 }
 
 .active .bar1 {
