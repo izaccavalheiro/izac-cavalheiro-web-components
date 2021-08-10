@@ -11,6 +11,7 @@ export namespace Components {
         "label": string;
     }
     interface IcSocialNetwork {
+        "darkMode": boolean;
         "image": string;
         "name": string;
         "target": string;
@@ -53,6 +54,7 @@ declare namespace LocalJSX {
         "label"?: string;
     }
     interface IcSocialNetwork {
+        "darkMode"?: boolean;
         "image"?: string;
         "name"?: string;
         "target"?: string;
