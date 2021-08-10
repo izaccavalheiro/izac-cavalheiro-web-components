@@ -1,6 +1,6 @@
 {
   "name": "ic-webcomponents",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
   "module": "dist/custom-elements/index.js",
@@ -24,5 +24,6 @@
   "dependencies": {
     "@stencil/core": "^2.0.1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "git@github.com:izaccavalheiro/ic-webcomponents.git"
 }
