@@ -11,10 +11,15 @@ a {
   display: flex;
   min-width: 2rem;
   max-width: 2rem;
+  transition: all .25s ease-out;
 }
 
 a * {
   pointer-events: none;
+}
+
+a:hover {
+  transform: translate(0, -.25rem) scale(1.1);
 }
 
 a > img {
