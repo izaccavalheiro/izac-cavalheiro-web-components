@@ -51,7 +51,7 @@ export class IcMenuToggle {
     return (
       <Host>
         <button class={`${this.className} ${this.darkMode ? "dark-mode" : ""}`} onClick={this.handleClick}>
-          <span class="">{this.label}</span>
+          <span class="label">{this.label}</span>
           <span class="bar1"></span>
           <span class="bar2"></span>
           <span class="bar3"></span>

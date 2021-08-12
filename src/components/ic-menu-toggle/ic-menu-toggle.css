@@ -20,6 +20,11 @@ button * {
   pointer-events: none;
 }
 
+.label {
+  font-size: 0;
+  text-indent: -10000rem;
+}
+
 .bar1, .bar2, .bar3 {
   flex: 1;
   min-width: 2rem;
