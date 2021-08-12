@@ -40,7 +40,7 @@ export class IcSocialNetwork {
 
     return (
       <Host>
-        <a href={url} title={urlTitle} target={target} class={classesName}>
+        <a href={url} title={urlTitle} target={target} class={classesName} rel="nofollow">
           <img src={getAssetPath(`./assets/${image}`)} alt={imageAlt} />
         </a>
       </Host>
