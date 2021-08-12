@@ -46,4 +46,5 @@ button.dark-mode {
 
 button.dark-mode > span {
   background: #000;
+  text-indent: -1000rem;
 }
