@@ -4,11 +4,11 @@ import {
   h,
   Prop,
   State
-} from '@stencil/core'
+} from "@stencil/core"
 
 @Component({
-  tag: 'ic-menu-toggle',
-  styleUrl: 'ic-menu-toggle.css',
+  tag: "ic-menu-toggle",
+  styleUrl: "ic-menu-toggle.css",
   shadow: true
 })
 export class IcMenuToggle {
@@ -17,14 +17,14 @@ export class IcMenuToggle {
   @Prop() darkMode: boolean
 
   @State() checked: boolean = false
-  @State() className: string = ''
+  @State() className: string = ""
 
   private setChecked = (checked?: boolean) => {
     this.checked = checked || !this.checked
   }
 
   private getClassName = (state) => {
-    return state ? 'active' : ''
+    return state ? "active" : ""
   }
 
   private handleClick = () => {
@@ -50,10 +50,11 @@ export class IcMenuToggle {
   render() {
     return (
       <Host>
-        <button class={`${this.className} ${this.darkMode ? 'dark-mode' : ''}`} onClick={this.handleClick}>
-          <span class='bar1'></span>
-          <span class='bar2'></span>
-          <span class='bar3'></span>
+        <button class={`${this.className} ${this.darkMode ? "dark-mode" : ""}`} onClick={this.handleClick}>
+          <span class="">{this.label}</span>
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
         </button>
       </Host>
     )
