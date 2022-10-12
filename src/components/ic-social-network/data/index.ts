@@ -9,7 +9,7 @@ export const data = [{
   url: 'https://github.com/izaccavalheiro'
 }, {
   name: 'codesandbox',
-  url: 'https://codesandbox.io/izaccavalheiro'
+  url: 'https://codesandbox.io/u/izaccavalheiro'
 }, {
   name: 'linkedin',
   url: 'https://linkedin.com/in/izaccavalheiro'
