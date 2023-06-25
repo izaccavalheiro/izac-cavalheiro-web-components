@@ -41,7 +41,7 @@ export class IcSocialNetwork {
     return (
       <Host>
         <a href={url} title={urlTitle} target={target} class={classesName} rel="noopener">
-          <img src={getAssetPath(`./assets/${image}`)} alt={imageAlt} />
+          <img src={getAssetPath(`./assets/${image}`)} alt={imageAlt} width="64" height="64" />
         </a>
       </Host>
     )
